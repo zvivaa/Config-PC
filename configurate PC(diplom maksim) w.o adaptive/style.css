@@ -1,0 +1,362 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.component {
+    margin-bottom: 1rem;
+}
+
+.title-text {
+    font-size: 25px;
+    padding: 25px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.storage-group + .storage-group {
+    margin-top: 10px;
+}
+
+.navigation {
+    margin: auto;
+    justify-content: center;
+    padding: 15px;
+    display: flex;
+}
+
+#add-storage {
+    width: 25px;
+}
+
+button {
+    display: inline-block;	
+	box-sizing: border-box;
+	outline: none;
+	border: 0;
+	border-radius: 50px;
+    height: 25px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: black;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+	transition: box-shadow 0.2s;
+    transition: 1s;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+nav {
+    background: rgb(18, 90, 198);
+    color: white;
+    width: 78.3%;
+    border-radius: 15px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+#saved-builds-page {
+    width: 80%;
+    margin: auto;
+}
+#selected-components {
+    font-family: Montserrat;
+}
+
+
+
+
+
+
+
+
+
+
+
+.component-block {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #E5E5E5;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    width: 500px;
+}
+  
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    max-width: 745.59px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    height: 0;
+    width: 500px;
+}
+  
+  .dropdown-content a {
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+  
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    transition: 2s;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    height: 100%;
+    transition: 2s;
+}
+  
+#dropdownBtn1:hover, #dropdownBtn2:hover, #dropdownBtn3:hover, #dropdownBtn4:hover, #dropdownBtn5:hover, #dropdownBtn6:hover, #dropdownBtn7:hover, #dropdownBtn8:hover, #dropdownBtn9:hover, #loadBtn:hover, #saveBtn:hover {
+    background-color: rgb(18, 90, 198);
+    color: white;
+}
+.saved-build button:hover {
+    background-color: rgb(18, 90, 198);
+    color: white;
+}
+
+#dropdownBtn1, #dropdownBtn2, #dropdownBtn3, #dropdownBtn4, #dropdownBtn5, #dropdownBtn6, #dropdownBtn7, #dropdownBtn8, #dropdownBtn9 {
+    width: 200px;
+    height: 50px;
+}
+.margin-dropdown {
+    margin: 15px 0 15px 0;
+}
+  
+.summ-box {
+      margin-left: 25px;
+      margin-top: 80px;
+      height: 100%;
+      width: 350px;
+      background: #f7f5f5;
+      padding: 15px;
+      border-radius: 4px;
+}
+#selectedItems {
+      font-size: 13px;
+}
+
+.f12 {
+    font-size: 12px;
+    font-weight: 600;
+}
+.text-red {
+    color: #F14949;
+}
+.warning svg {
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+}
+
+footer {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+}
+      
+footer p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #777;
+}
+      
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+#modalItems {
+    display: flex;
+    flex-direction: column;
+    }
+      
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 5px;
+}
+
+#modalItems img {
+    margin-right: 10px;
+}
+
+#modalItems a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+      
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+      
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+      
+#filterButtons button {
+    padding: 0px 17px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: .9em;
+    cursor: pointer;
+    transition: .2s;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.filter-active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    text-shadow: 0 0 10px rgb(42, 55, 74);
+}
+
+
+#filterButtons button:hover {
+    color: #007bff;
+}
+  
+.filter-active:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+#modal::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+#cpuModal,
+#motherboardModal,
+#ramModal,
+#videoCardModal,
+#storageModal,
+#coolerModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#saveBtn {
+    margin-top: 15px;
+}
+
+.saved-build {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .delete-icon,
+  .rename-icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .filter-button {
+    padding: 8px 16px;
+    margin: 8px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  .filter-button:hover {
+    background-color: #ddd;
+  }
+
+.modal::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+::-webkit-scrollbar {
+    background: white;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #007bff;
+    width: 5px;
+    border-radius: 5px;
+}

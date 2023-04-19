@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конфигуратор комплектующих ПК</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1 class="title-text"></h1>
+    <nav class="navigation">
+        <a href="#" id="main-page-link" style="font-weight: 700;">Конфигуратор комплектующих ПК</a>
+    </nav>
+    <div class="container main-page" id="main-page" style="margin-top: 25px; display: flex; flex-direction: row;">
+        <div style="display: flex; flex-direction: column;">
+            <div class="component-block">
+                <div style="display: flex;">
+                    <img style="margin-right: 25px;" src="images/configurator-1.svg">
+                    <div style="display: flex; flex-direction: column;">
+                        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                            <h1 style="font-size: 19px;">Процессор</h1>
+                            <div class="f12 text-red has-icon warning alert"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none" class="loaded">
+                                <path d="M7.63398 1.5C8.01888 0.833332 8.98112 0.833333 9.36602 1.5L14.9952 11.25C15.3801 11.9167 14.899 12.75 14.1292 12.75H2.87083C2.10103 12.75 1.61991 11.9167 2.00481 11.25L7.63398 1.5Z" fill="#E51A4B"></path>
+                                <rect x="8" y="4" width="1" height="5" rx="0.5" fill="white"></rect>
+                                <rect x="8" y="10" width="1" height="1" rx="0.5" fill="white"></rect>
+                                </svg>Обязательный компонент
+                            </div>
+                        </div>
+                        <a style="color: black; max-width: 980px;">Процессор (CPU) – сердце компьютера. Чем выше частота тем быстрее обрабатываются данные, а количество ядер<br/>позволяет распределить нагрузку и повысить быстродействие всей системы. Для разгона существуют модели<br/>с разблокированным множителем. Больший кеш улучшает работу в тяжелых режимах.</a>
+                    </div>
+                </div>
+                <div class="dropdown margin-dropdown">
+                    <button id="dropdownBtn1">Выбрать компонент</button>
+                </div>
+            </div>
+            <div class="component-block">
+                <div style="display: flex;">
+                    <img style="margin-right: 25px;" src="images/configurator-8.svg">
+                    <div style="display: flex; flex-direction: column;">
+                        <h1 style="font-size: 19px;">Видеокарта</h1>
+                        <a style="color: black; max-width: 980px;">Видеокарта (GPU) – это устройство отвечающее за поддержку и быстродействие игрового процесса. Основой<br/>видеокарты есть графический чип, чем выше мощность тем лучше. Второстепенный показатель – это видеопамять,<br/>отвечающая за подгрузку текстур на дисплей.</a>
+                    </div>
+                </div>
+                <div class="dropdown margin-dropdown">
+                    <button id="dropdownBtn4">Выбрать компонент</button>
+                </div>
+            </div>
+            <div class="component-block">
+                <div style="display: flex;">
+                    <img style="margin-right: 25px;" src="images/configurator-3.svg">
+                    <div style="display: flex; flex-direction: column;">
+                        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                            <h1 style="font-size: 19px;">Материнская плата</h1>
+                            <div class="f12 text-red has-icon warning alert"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none" class="loaded">
+                                <path d="M7.63398 1.5C8.01888 0.833332 8.98112 0.833333 9.36602 1.5L14.9952 11.25C15.3801 11.9167 14.899 12.75 14.1292 12.75H2.87083C2.10103 12.75 1.61991 11.9167 2.00481 11.25L7.63398 1.5Z" fill="#E51A4B"></path>
+                                <rect x="8" y="4" width="1" height="5" rx="0.5" fill="white"></rect>
+                                <rect x="8" y="10" width="1" height="1" rx="0.5" fill="white"></rect>
+                                </svg>Обязательный компонент
+                            </div>
+                        </div>
+                        <a style="color: black; max-width: 980px;">Материнская плата (MB) – основа компьютера. На плату как конструктор собираются остальные комплектующие.<br/>Материнская плата не отвечает за быстродействие компьютера, но за функционал, от нее зависит количество<br/>нужных выходов и разъемов, поддержка режимов SLI, Cross-Fire, Raid, и конечно разводка системы питания.</a>
+                    </div>
+                </div>
+                <div class="dropdown margin-dropdown">
+                    <button id="dropdownBtn2">Выбрать компонент</button>
+                </div>
+            </div>
+            <div class="component-block">
+                <div style="display: flex;">
+                    <img style="margin-right: 25px;" src="images/configurator-4.svg">
+                    <div style="display: flex; flex-direction: column;">
+                        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                            <h1 style="font-size: 19px;">Оперативная память</h1>
+                            <div class="f12 text-red has-icon warning alert"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none" class="loaded">
+                                <path d="M7.63398 1.5C8.01888 0.833332 8.98112 0.833333 9.36602 1.5L14.9952 11.25C15.3801 11.9167 14.899 12.75 14.1292 12.75H2.87083C2.10103 12.75 1.61991 11.9167 2.00481 11.25L7.63398 1.5Z" fill="#E51A4B"></path>
+                                <rect x="8" y="4" width="1" height="5" rx="0.5" fill="white"></rect>
+                                <rect x="8" y="10" width="1" height="1" rx="0.5" fill="white"></rect>
+                                </svg>Обязательный компонент
+                            </div>
+                        </div>
+                        <a style="color: black; max-width: 980px;">Оперативная память (Mem) – отвечает за то, с каким объемом данных в данный момент времени может работать<br/>процессор. Чем ее больше, тем быстрее работает компьютер.</a>
+                    </div>
+                </div>
+                <div class="dropdown margin-dropdown">
+                    <button id="dropdownBtn3">Выбрать компонент</button>
+                </div>
+            </div>
+            <div class="component-block">
+                <div style="display: flex;">
+                    <img style="margin-right: 25px;" src="images/configurator-6.svg">
+                    <div style="display: flex; flex-direction: column;">
+                        <h1 style="font-size: 19px;">Накопители SSD</h1>
+                        <a style="color: black; max-width: 980px;">Твердотельный накопитель (SSD) – это скоростное устройство для хранения данных. Его скорость работы в несколько раз быстрее обычного жесткого диска. Обычно SSD используют для установки на него Операционной системы и всех сопутствующих программ. Существенно ускоряет работу всего компьютера.</a>
+                    </div>
+                </div>
+                <div class="dropdown margin-dropdown">
+                    <button id="dropdownBtn5">Выбрать компонент</button>
+                </div>
+            </div>
+            <div class="component-block">
+                <div style="display: flex;">
+                    <img style="margin-right: 25px;" src="images/configurator-2.svg">
+                    <div style="display: flex; flex-direction: column;">
+                        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                            <h1 style="font-size: 19px;">Охлаждение процессора</h1>
+                            <div class="f12 text-red has-icon warning alert"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none" class="loaded">
+                                <path d="M7.63398 1.5C8.01888 0.833332 8.98112 0.833333 9.36602 1.5L14.9952 11.25C15.3801 11.9167 14.899 12.75 14.1292 12.75H2.87083C2.10103 12.75 1.61991 11.9167 2.00481 11.25L7.63398 1.5Z" fill="#E51A4B"></path>
+                                <rect x="8" y="4" width="1" height="5" rx="0.5" fill="white"></rect>
+                                <rect x="8" y="10" width="1" height="1" rx="0.5" fill="white"></rect>
+                                </svg>Обязательный компонент
+                            </div>
+                        </div>
+                        <a style="color: black; max-width: 980px;">Охлаждения (cooler) – радиатор с прикреплённым вентилятором предназначенный для охлаждения процессора. Показатель теплоотвода (TDP) кулера не должен быть меньше показателя тепловыделения (TDP) процессора. А если процессор выбираете для разгона, то теплоотвод системы охлаждения должен превышать показатель минимум в два раза.</a>
+                    </div>
+                </div>
+                <div class="dropdown margin-dropdown">
+                    <button id="dropdownBtn6">Выбрать компонент</button>
+                </div>
+            </div>
+            <div class="component-block">
+                <div style="display: flex;">
+                    <img style="margin-right: 25px;" width="50" src="images/configurator-2.svg">
+                    <div style="display: flex; flex-direction: column;">
+                        <h1 style="font-size: 19px;">Корпусные внтиляторы</h1>
+                        <a style="color: black; max-width: 980px;">Корпусные вентиляторы - компоненты, устанавливаемые в корпус компьютера или сервера, которые помогают поддерживать оптимальную температуру внутри системы. Они обычно размещаются на задней и передней панелях корпуса и могут быть связаны с системой охлаждения процессора, графической карты и других компонентов.</a>
+                    </div>
+                </div>
+                <div class="dropdown margin-dropdown">
+                    <button id="dropdownBtn9">Выбрать компонент</button>
+                </div>
+            </div>
+            <div class="component-block">
+                <div style="display: flex;">
+                    <img style="margin-right: 25px;" src="images/configurator-12.svg">
+                    <div style="display: flex; flex-direction: column;">
+                        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                            <h1 style="font-size: 19px;">Блок питания</h1>
+                            <div class="f12 text-red has-icon warning alert"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none" class="loaded">
+                                <path d="M7.63398 1.5C8.01888 0.833332 8.98112 0.833333 9.36602 1.5L14.9952 11.25C15.3801 11.9167 14.899 12.75 14.1292 12.75H2.87083C2.10103 12.75 1.61991 11.9167 2.00481 11.25L7.63398 1.5Z" fill="#E51A4B"></path>
+                                <rect x="8" y="4" width="1" height="5" rx="0.5" fill="white"></rect>
+                                <rect x="8" y="10" width="1" height="1" rx="0.5" fill="white"></rect>
+                                </svg>Обязательный компонент
+                            </div>
+                        </div>
+                        <a style="color: black; max-width: 980px;">Блок питания обеспечивает током все компоненты и противостоит всем перегрузкам и скачкам сети. Мощность блока питания выбирается всегда с запасом, так он дольше прослужит без пиковых нагрузок.</a>
+                    </div>
+                </div>
+                <div class="dropdown margin-dropdown">
+                    <button id="dropdownBtn8">Выбрать компонент</button>
+                </div>
+            </div>
+            <div class="component-block">
+                <div style="display: flex;">
+                    <img style="margin-right: 25px;" src="images/configurator-11.svg">
+                    <div style="display: flex; flex-direction: column;">
+                        <h1 style="font-size: 19px;">Корпус</h1>
+                        <a style="color: black; max-width: 980px;">Корпус – не маловажная составляющая системного блока. Толщина стенок определяют прочность и шума-изоляцию. Размер влияет на охлаждение внутренних компонентов.</a>
+                    </div>
+                </div>
+                <div class="dropdown margin-dropdown">
+                    <button id="dropdownBtn7">Выбрать компонент</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="summ-box" style="display: flex; flex-direction: column;">
+            <p style="font-weight: 900;">Стоимость ПК</p>
+            <p id="totalPrice" style="margin-top: 0px;" >Итого: 0 руб.</p>
+            <div id="selectedItems" style="margin-top: 10px;">
+                <!-- Здесь будут выводиться выбранные комплектующие -->
+            </div>
+            <button class="" id="saveBtn">Сохранить сборку</button>
+            <button style="margin-top: 15px;" id="loadBtn">Загрузить сборку</button>
+            <div id="savedBuildsContainer">
+                <h3>Сохраненные сборки:</h3>
+            </div>  
+        </div>
+    </div>
+    <div id="saved-builds-page" style="display:none;">
+        <h2>Сохраненные сборки</h2>
+        <ul id="saved-builds-list"></ul>
+    </div>
+    <div id="cpuModal" class="modal">
+        <div class="modal-content" id="cpuModalContent"></div>
+    </div>
+    <div id="motherboardModal" class="modal">
+        <div class="modal-content" id="motherboardModalContent"></div>
+    </div>
+    <div id="ramModal" class="modal">
+        <div class="modal-content" id="ramModalContent"></div>
+    </div>
+    <div id="videoCardModal" class="modal">
+        <div class="modal-content" id="videoCardModalContent"></div>
+    </div>
+    <div id="storageModal" class="modal">
+        <div class="modal-content" id="storageModalContent"></div>
+    </div>
+    <div id="coolerModal" class="modal">
+        <div class="modal-content" id="coolerModalContent"></div>
+    </div>
+    <div id="caseModal" class="modal">
+          <div class="modal-content" id="caseModalContent"></div>
+    </div>
+    <div id="psuModal" class="modal">
+        <div class="modal-content" id="psuModalContent"></div>
+    </div>
+    <div id="hddModal" class="modal">
+        <div class="modal-content" id="hddModalContent"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+<footer>
+    <div class="container">
+      <p>Конфигуратор ПК - это удобный инструмент, который позволяет выбрать и собрать свой собственный компьютер, подходящий именно под ваши нужды. Наш конфигуратор предлагает широкий выбор комплектующих от лучших производителей, таких как Intel, AMD, NVIDIA, ASUS, Gigabyte и других.</p>
+      <p>Конфигуратор ПК на нашем сайте - это простой и удобный инструмент, который поможет вам создать компьютер, который будет соответствовать вашим потребностям и пожеланиям. Начните сборку своего ПК прямо сейчас!</p>
+      <p>Соберите свой компьютер, выбирая из различных видов процессоров, видеокарт, материнских плат, оперативной памяти, жестких дисков и других комплектующих. Конфигуратор предлагает максимально гибкую настройку, позволяя выбирать комплектующие на любой вкус и бюджет.</p>
+    </div>
+  </footer>  
+</html>
+
+
+
+
+
+
+
+
+
